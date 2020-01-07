@@ -14,7 +14,7 @@ class CreateProjetosTable extends Migration
     public function up()
     {
         Schema::create('projetos', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('nome');
             $table->integer('estimativa_horas');
             $table->timestamps();

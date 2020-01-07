@@ -14,7 +14,7 @@ class CreateDesenvolvedorsTable extends Migration
     public function up()
     {
         Schema::create('desenvolvedores', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('nome');
             $table->string('cargo');
             $table->timestamps();
